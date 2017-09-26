@@ -3,7 +3,7 @@
 *.zip
 .idea
 .sass-cache/
-
+/vendor/
 /nbproject/private/
 /node_modules/
 ad.js
