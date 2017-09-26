@@ -1,0 +1,268 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "026ad897ebe0f7d97bb12d49617fddba",
+    "packages": [
+        {
+            "name": "almasaeed2010/adminlte",
+            "version": "v2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/almasaeed2010/AdminLTE.git",
+                "reference": "6157c7bc77bfca7e9aa75f529f3f612122d9a2f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/6157c7bc77bfca7e9aa75f529f3f612122d9a2f1",
+                "reference": "6157c7bc77bfca7e9aa75f529f3f612122d9a2f1",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abdullah Almsaeed",
+                    "email": "abdullah@almsaeedstudio.com"
+                }
+            ],
+            "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 3",
+            "homepage": "https://adminlte.io/",
+            "keywords": [
+                "JS",
+                "admin",
+                "back-end",
+                "css",
+                "less",
+                "responsive",
+                "template",
+                "theme",
+                "web"
+            ],
+            "time": "2017-07-08T17:45:57+00:00"
+        },
+        {
+            "name": "components/font-awesome",
+            "version": "4.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/font-awesome.git",
+                "reference": "885308b939369d147bec93174722786bc2c4eedd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/font-awesome/zipball/885308b939369d147bec93174722786bc2c4eedd",
+                "reference": "885308b939369d147bec93174722786bc2c4eedd",
+                "shasum": ""
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "styles": [
+                        "css/font-awesome.css"
+                    ],
+                    "files": [
+                        "css/font-awesome.min.css",
+                        "css/font-awesome.css.map",
+                        "fonts/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "OFL-1.1"
+            ],
+            "description": "The iconic font designed for use with Twitter Bootstrap.",
+            "time": "2016-10-25T10:56:23+00:00"
+        },
+        {
+            "name": "components/jquery",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/jquery.git",
+                "reference": "e5534d4ab8e80c159553d507e358ed20a806d3bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/jquery/zipball/e5534d4ab8e80c159553d507e358ed20a806d3bf",
+                "reference": "e5534d4ab8e80c159553d507e358ed20a806d3bf",
+                "shasum": ""
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "jquery.js"
+                    ],
+                    "files": [
+                        "jquery.min.js",
+                        "jquery.min.map",
+                        "jquery.slim.js",
+                        "jquery.slim.min.js",
+                        "jquery.slim.min.map"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "JS Foundation and other contributors"
+                }
+            ],
+            "description": "jQuery JavaScript Library",
+            "homepage": "http://jquery.com",
+            "time": "2017-03-21T07:01:49+00:00"
+        },
+        {
+            "name": "driftyco/ionicons",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/driftyco/ionicons.git",
+                "reference": "ecb4b806831005c25b97ed9089fbb1d7dcc0879c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/driftyco/ionicons/zipball/ecb4b806831005c25b97ed9089fbb1d7dcc0879c",
+                "reference": "ecb4b806831005c25b97ed9089fbb1d7dcc0879c",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Bradley",
+                    "email": "adam@drifty.com",
+                    "homepage": "https://twitter.com/adamdbradley",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Max Lynch",
+                    "email": "max@drifty.com",
+                    "homepage": "https://twitter.com/maxlynch",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ben Sperry",
+                    "email": "ben@drifty.com",
+                    "homepage": "https://twitter.com/benjsperry",
+                    "role": "Designer"
+                }
+            ],
+            "description": "The premium icon font for Ionic Framework.",
+            "homepage": "http://ionicons.com/",
+            "keywords": [
+                "fonts",
+                "icon font",
+                "icons",
+                "ionic",
+                "web font"
+            ],
+            "time": "2015-01-03T20:02:30+00:00"
+        },
+        {
+            "name": "grimmlink/jquery-slimscroll",
+            "version": "v1.3.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/grimmlink/jquery-slimscroll.git",
+                "reference": "9b6acd42c737ff3fcea92563d1496850e26f513f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/grimmlink/jquery-slimscroll/zipball/9b6acd42c737ff3fcea92563d1496850e26f513f",
+                "reference": "9b6acd42c737ff3fcea92563d1496850e26f513f",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Shim repository for https://github.com/rochal/jQuery-slimScroll",
+            "keywords": [
+                "jquery-plugin",
+                "scroll",
+                "scrollable",
+                "scrollbar",
+                "scroller",
+                "scrolling",
+                "slimscroll",
+                "ui"
+            ],
+            "time": "2016-08-12T10:16:47+00:00"
+        },
+        {
+            "name": "twbs/bootstrap",
+            "version": "v3.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/0b9c4a4007c44201dce9a6cc1a38407005c26c86",
+                "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86",
+                "shasum": ""
+            },
+            "replace": {
+                "twitter/bootstrap": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                },
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                }
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "http://getbootstrap.com",
+            "keywords": [
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "less",
+                "mobile-first",
+                "responsive",
+                "web"
+            ],
+            "time": "2016-07-25T15:51:55+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

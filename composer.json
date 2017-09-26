@@ -1,0 +1,16 @@
+{
+
+  "require": {
+    "almasaeed2010/adminlte": "^2.4"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "model\\": "app/model",
+      "controller\\": "app/controller",
+      "app\\": "app/",
+      "view\\": "app/view",
+      "config\\": "config/"
+    }
+  }
+}
