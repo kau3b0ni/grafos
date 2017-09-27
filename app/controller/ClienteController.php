@@ -2,10 +2,12 @@
 
 namespace controller;
 
-
-
+use \PDO;
+use \PDOException;
 use model\Cliente;
 use config\Conexao;
+require_once("controle-sessao.php");
+
 /**
  * @param Cliente $cliente
  */
@@ -25,19 +27,133 @@ function insereCliente(Cliente $cliente) {
 
         if($stmt->execute()){
             if($stmt->rowCount()>0){
-                echo "O cliente foi adicionado.";
-            } else {
-                echo "Não foi possível executar a operação!";
+                mostra_alerta("O cliente foi adicionado.","success");
             }
         }
-        //return header('location:produto-lista.php');
+
+    } catch (PDOException $e) {
+        $erro =  "Problema com a conexão: " . $e->getMessage();
+        mostra_alerta($erro,"danger");
+    }
+    return header('location:cliente-lista.php');
+    $db = $database->closeConnection();
+}
+
+/**
+ * @return array
+ */
+function listaCliente() {
+    try {
+        $database = new Conexao();
+        $db = $database->openConnection();
+        $stmt = $db->prepare("SELECT * FROM cliente");
+
+
+        if($stmt->execute()) {
+
+            while($resultado = $stmt->fetchAll(PDO::FETCH_OBJ)) {
+                return $resultado;
+            }
+
+        }
+
+    } catch (PDOException $e) {
+        $erro =  "Problema com a conexão: " . $e->getMessage();
+        mostra_alerta($erro,"danger");
+    }
+
+    $db = $database->closeConnection();
+}
+
+/**
+ * @param $id
+ * @param Cliente $cliente
+ */
+function alteraCliente($id, Cliente $cliente){
+    try {
+        $database = new Conexao();
+        $db = $database->openConnection();
+
+        $stmt = $db->prepare("UPDATE cliente SET nome = :nome,
+												 cpf  = :cpf,
+												 cnpj = :cnpj,
+												 telefone = :telefone,
+												 celular = :celular,
+												 email = :email
+												 WHERE id = {$id}");
+
+        $stmt->bindValue( ':nome', $cliente->getNome());
+        $stmt->bindValue( ':cpf', $cliente->getCpf());
+        $stmt->bindValue( ':cnpj', $cliente->getCnpj());
+        $stmt->bindValue( ':telefone', $cliente->getTelefone());
+        $stmt->bindValue( ':celular', $cliente->getCelular());
+        $stmt->bindValue( ':email', $cliente->getEmail());
+
+        if($stmt->execute()){
+            if($stmt->rowCount()>0){
+                mostra_alerta("O cliente foi alterado.","success");
+            }
+        }
+
+
+    } catch (PDOException $e) {
+        $erro =  "Problema com a conexão: " . $e->getMessage();
+        mostra_alerta($erro,"danger");
+    }
+    return header('location:cliente-lista.php');
+    $db = $database->closeConnection();
+}
+function buscaCliente($id){
+
+    try {
+        $database = new Conexao();
+        $db = $database->openConnection();
+
+        $stmt = $db->prepare("SELECT * FROM cliente WHERE id = ?");
+        $stmt->bindParam(1, $id);
+
+        if($stmt->execute()){
+
+            while($resultado = $stmt->fetch(PDO::FETCH_OBJ)) {
+                return $resultado;
+            }
+
+        } else {
+            echo "Não foi possível exexutar a operação!";
+        }
+
 
 
     } catch (PDOException $e) {
         echo "Problema com a conexão: " . $e->getMessage();
     }
+
     $db = $database->closeConnection();
 
+}
+
+/**
+ * @param $id
+ */
+function removeCliente($id) {
+
+    try {
+        $database = new Conexao();
+        $db = $database->openConnection();
+
+        $stmt = $db->prepare("DELETE FROM cliente WHERE id = ?");
+        $stmt->bindParam(1, $id);
+
+        if($stmt->execute()){
+            mostra_alerta("O cliente foi removido.","warning");
+        }
+
+    } catch (PDOException $e) {
+        $erro =  "Problema com a conexão: " . $e->getMessage();
+        mostra_alerta($erro,"danger");
+    }
+    return header('location:cliente-lista.php');
+    $db = $database->closeConnection();
 }
 
 

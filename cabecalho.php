@@ -72,8 +72,32 @@
                         <a href="#">
                             <i class="fa fa-user-circle"></i> <span>Clientes</span>
                             <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="cliente-lista.php"><i class="fa fa-table"></i> Lista</a></li>
+                            <li><a href="cliente-cadastro.php"><i class="fa fa-plus-circle"></i> Novo</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-map"></i> <span>Produtos</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="cliente-lista.php"><i class="fa fa-table"></i> Lista</a></li>
+                            <li><a href="cliente-cadastro.php"><i class="fa fa-plus-circle"></i> Novo</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-newspaper-o"></i> <span>OS's</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
                         </a>
                         <ul class="treeview-menu">
                             <li><a href="cliente-lista.php"><i class="fa fa-table"></i> Lista</a></li>
