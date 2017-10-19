@@ -3,7 +3,7 @@
 
 require_once 'app/controller/EnderecoController.php';
 require_once 'vendor/autoload.php';
-
+var_dump($_POST);
 $cliente_id = $_POST['id'];
 //$endereco = \controller\buscaEndereço($cliente_id);
 //session_start();

@@ -43,6 +43,9 @@
                                 <th>Telefone</th>
                                 <th>Celular</th>
                                 <th>E-mail</th>
+                                <th> </th>
+                                <th>Ações</th>
+                                <th> </th>
                             </tr>
                             <?php
 
@@ -67,7 +70,13 @@
                                 <td class="actions">
                                     <form action="remove-cliente.php" method="post">
                                         <input type="hidden" name="id" value="<?php echo("$cliente->id"); ?>" >
-                                        <button class="btn btn-danger">remover</button>
+                                        <button class="btn btn-danger">Remover</button>
+                                    </form>
+                                </td>
+                                <td class="actions">
+                                    <form action="cliente-endereco.php" method="post">
+                                        <input type="hidden" name="id" value="<?php echo("$cliente->id"); ?>" >
+                                        <button class="btn btn-primary">Endereço</button>
                                     </form>
                                 </td>
 

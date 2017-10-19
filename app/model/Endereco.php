@@ -1,6 +1,9 @@
 <?php
 
-class Endereco{
+namespace model;
+
+class Endereco
+{
 
     private $id;
     private $cliente_id;
@@ -37,119 +40,151 @@ class Endereco{
     }
 
     /**
-    * @return mixed
-    */
+     * @return mixed
+     */
     public function getId()
     {
         return $this->id;
-    }/**
-    * @param mixed $id
-    */
+    }
+
+    /**
+     * @param mixed $id
+     */
     public function setId($id)
     {
         $this->id = $id;
-    }/**
-    * @return mixed
-    */
+    }
+
+    /**
+     * @return mixed
+     */
     public function getClienteId()
     {
         return $this->cliente_id;
-    }/**
-    * @param mixed $cliente_id
-    */
+    }
+
+    /**
+     * @param mixed $cliente_id
+     */
     public function setClienteId($cliente_id)
     {
         $this->cliente_id = $cliente_id;
-    }/**
-    * @return mixed
-    */
+    }
+
+    /**
+     * @return mixed
+     */
     public function getLogradouro()
     {
         return $this->logradouro;
-    }/**
-    * @param mixed $logradouro
-    */
+    }
+
+    /**
+     * @param mixed $logradouro
+     */
     public function setLogradouro($logradouro)
     {
         $this->logradouro = $logradouro;
-    }/**
-    * @return mixed
-    */
+    }
+
+    /**
+     * @return mixed
+     */
     public function getNumero()
     {
         return $this->numero;
-    }/**
-    * @param mixed $numero
-    */
+    }
+
+    /**
+     * @param mixed $numero
+     */
     public function setNumero($numero)
     {
         $this->numero = $numero;
-    }/**
-    * @return mixed
-    */
+    }
+
+    /**
+     * @return mixed
+     */
     public function getBairro()
     {
         return $this->bairro;
-    }/**
-    * @param mixed $bairro
-    */
+    }
+
+    /**
+     * @param mixed $bairro
+     */
     public function setBairro($bairro)
     {
         $this->bairro = $bairro;
-    }/**
-    * @return mixed
-    */
+    }
+
+    /**
+     * @return mixed
+     */
     public function getComplemento()
     {
         return $this->complemento;
-    }/**
-    * @param mixed $complemento
-    */
+    }
+
+    /**
+     * @param mixed $complemento
+     */
     public function setComplemento($complemento)
     {
         $this->complemento = $complemento;
-    }/**
-    * @return mixed
-    */
+    }
+
+    /**
+     * @return mixed
+     */
     public function getCep()
     {
         return $this->cep;
-    }/**
-    * @param mixed $cep
-    */
+    }
+
+    /**
+     * @param mixed $cep
+     */
     public function setCep($cep)
     {
         $this->cep = $cep;
-    }/**
-    * @return mixed
-    */
+    }
+
+    /**
+     * @return mixed
+     */
     public function getCidade()
     {
         return $this->cidade;
-    }/**
-    * @param mixed $cidade
-    */
+    }
+
+    /**
+     * @param mixed $cidade
+     */
     public function setCidade($cidade)
     {
         $this->cidade = $cidade;
-    }/**
-    * @return mixed
-    */
+    }
+
+    /**
+     * @return mixed
+     */
     public function getUf()
     {
         return $this->uf;
-    }/**
-    * @param mixed $uf
-    */
+    }
+
+    /**
+     * @param mixed $uf
+     */
     public function setUf($uf)
     {
         $this->uf = $uf;
     }
 
-    
 
-
-
+}
 
 ?>
 

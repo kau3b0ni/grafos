@@ -1,3 +1,4 @@
+
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
 
@@ -6,64 +7,76 @@
         <!-- Horizontal Form -->
         <div class="box box-info">
             <div class="box-header with-border">
-                <h3 class="box-title">Cadastro de Cliente</h3>
+                <h3 class="box-title">Cadastro de Endereço</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form class="form-horizontal" action="adiciona-cliente.php" method="post">
+            <form class="form-horizontal" action="adiciona-endereco.php" method="post">
+
                 <div class="box-body">
                     <div class="form-group">
-                        <label for="nome" class="col-sm-2 control-label">Nome</label>
+                        <label for="nome" class="col-sm-2 control-label">Logradouro</label>
                         <div class="col-sm-10">
-                            <input class="form-control" type="text" id="nome" name="nome" placeholder="Nome Completo">
+                            <input type="hidden" class="form-control" type="text" id="cliente_id" name="cliente_id" value="<?php echo ($_SESSION["cliente_id"]) ?>">
+                            <input class="form-control" type="text" id="logradouro" name="logradouro" placeholder="Logradouro">
                         </div>
                     </div>
                 </div>
 
                 <div class="box-body">
                     <div class="form-group">
-                        <label for="cpf" class="col-sm-2 control-label">CPF</label>
+                        <label for="numero" class="col-sm-2 control-label">Numero</label>
                         <div class="col-sm-10">
-                            <input type="text" name="cpf" class="form-control" id="cpf" placeholder="000.000.000-00">
+                            <input class="form-control" type="number" id="numero" name="numero" placeholder="Numero">
                         </div>
                     </div>
                 </div>
 
                 <div class="box-body">
                     <div class="form-group">
-                        <label for="cnpj" class="col-sm-2 control-label">CNPJ</label>
+                        <label for="bairro" class="col-sm-2 control-label">Bairro</label>
                         <div class="col-sm-10">
-                            <input type="text" name="cnpj" class="form-control" id="cnpj" placeholder="00.000.000/0000-00">
+                            <input class="form-control" type="text" id="bairro" name="bairro" placeholder="Bairro">
                         </div>
                     </div>
                 </div>
 
                 <div class="box-body">
                     <div class="form-group">
-                        <label for="telefone" class="col-sm-2 control-label">Telefone</label>
+                        <label for="complemento" class="col-sm-2 control-label">Complemento</label>
                         <div class="col-sm-10">
-                            <input type="text" name="telefone" class="form-control" id="telefone" placeholder="(00)0000-0000">
+                            <input class="form-control" type="text" id="complemento" name="complemento" placeholder="Complemento">
                         </div>
                     </div>
                 </div>
 
                 <div class="box-body">
                     <div class="form-group">
-                        <label for="celular" class="col-sm-2 control-label">Celular</label>
+                        <label for="cep" class="col-sm-2 control-label">CEP</label>
                         <div class="col-sm-10">
-                            <input type="text" name="celular" class="form-control" id="celular" placeholder="(00)00000-0000">
+                            <input class="form-control" type="text" id="cep" name="cep" placeholder="CEP">
                         </div>
                     </div>
                 </div>
 
                 <div class="box-body">
                     <div class="form-group">
-                        <label for="email" class="col-sm-2 control-label">E-mail.</label>
+                        <label for="cidade" class="col-sm-2 control-label">Cidade</label>
                         <div class="col-sm-10">
-                            <input type="email" name="email" class="form-control" id="email" placeholder="name@email.com">
+                            <input class="form-control" type="text" id="cidade" name="cidade" placeholder="Cidade">
                         </div>
                     </div>
                 </div>
+
+                <div class="box-body">
+                    <div class="form-group">
+                        <label for="uf" class="col-sm-2 control-label">UF</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" id="uf" name="uf" placeholder="UF">
+                        </div>
+                    </div>
+                </div>
+
 
                 <!-- /.box-body -->
                 <div class="box-footer">
@@ -80,5 +93,4 @@
 <!-- /.content-wrapper -->
 
 
-
-
+}
